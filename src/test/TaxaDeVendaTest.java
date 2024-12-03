@@ -6,10 +6,10 @@ import org.junit.Test;
 
 public class TaxaDeVendaTest {
 
+    TaxaDeVenda taxaDeVenda = new TaxaDeVenda();
+
     @Test
     public void testCalcularLucroNaVenda() {
-        TaxaDeVenda taxaDeVenda = new TaxaDeVenda();
-
         double valorBrutoVenda = 1000.0;
         double lucroSemTaxa = taxaDeVenda.calcularLucroComTaxa(valorBrutoVenda);
 
@@ -19,8 +19,6 @@ public class TaxaDeVendaTest {
 
     @Test
     public void testCalcularLucroEmpresa() {
-        TaxaDeVenda taxaDeVenda = new TaxaDeVenda();
-
         double valorBrutoVenda = 1000.0;
         double lucroEmpresa = taxaDeVenda.calcularLucroEmpresa(valorBrutoVenda);
 

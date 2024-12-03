@@ -23,4 +23,15 @@ public class DebitarTest {
 
         debitar.debitar(valorADebitar);
     }
+
+    @Test
+    public void testSaldoInsuficienteAssert() {
+        double valorADebitar = 150.0;
+
+        IllegalArgumentException exception = Assert.assertThrows(IllegalArgumentException.class, () -> {
+            debitar.debitar(valorADebitar);
+        });
+        exception.getMessage();
+
+    }
 }

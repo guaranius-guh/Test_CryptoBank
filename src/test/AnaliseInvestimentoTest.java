@@ -3,7 +3,7 @@ package test;
 import main.AnaliseInvestimento;
 import main.PerfilInvestidor;
 import org.junit.Assert;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 public class AnaliseInvestimentoTest {
 
